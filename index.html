@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tour du lịch 5 ngày 4 đêm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".nav-scroll" data-bs-offset="90" tabindex="0">
+  <div class="card" style="width: 25rem; border: white; display: inline-block;">
+        <div class="card-body">
+            <h5 class="card-title" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(25, 95, 185);">
+                Báo cáo dự án về tour du lịch (Nhóm 9-Thiết kế Web-K51.SPTINA)</h5>
+            <hr style="border-color: rgb(25, 95, 185);">
+            <h6 class="card-subtitle" style="color: rgb(25, 95, 185);">Giảng viên hướng dẫn: Võ Lê Phúc Hậu</h6>
+        </div>
+  </div>
+
+  <div id="readingProgress" aria-hidden="true"></div>
+
+  <header class="title-tour" data-aos="fade-down">
+    <h1>
+      Cồn Én - Thiên Cấm Sơn - Rạch Giá - Cà Mau - Bạc Liêu ‘Du Lịch Điện Gió Xứ Công Tử’ - Sóc Trăng ‘Khám Phá Ẩm Thực Khmer’
+    </h1>
+  </header>
+
+  <div class="container-inner" data-aos="zoom-in">
+    <div id="tourCarousel" class="carousel slide carousel-fade shadow-sm" data-bs-ride="carousel" data-bs-touch="true" aria-label="Ảnh tour">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="0" class="active" aria-label="Ảnh 1"></button>
+        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="1" aria-label="Ảnh 2"></button>
+        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="2" aria-label="Ảnh 3"></button>
+        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="3" aria-label="Ảnh 4"></button>
+        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="4" aria-label="Ảnh 5"></button>
+        <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="5" aria-label="Ảnh 6"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="ảnh/565739959_812766861690287_8115419246468718278_n.jpg" class="d-block w-100 lb-img" alt="Cồn Én" data-caption="Cồn Én – Thiên nhiên hoang sơ giữa sông nước miền Tây">
+          <div class="carousel-caption"><h5>Cồn Én – Thiên nhiên hoang sơ giữa sông nước miền Tây</h5></div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="ảnh/nuicammm.jpg" class="d-block w-100 lb-img" alt="Thiên Cấm Sơn" data-caption="Thiên Cấm Sơn – Núi rừng hùng vĩ, điểm ngắm bình minh">
+          <div class="carousel-caption"><h5>Thiên Cấm Sơn – Núi rừng hùng vĩ, điểm ngắm bình minh</h5></div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="ảnh/hon-dat-kien-giang-kdl-rach-gia-1737421548.jpeg" class="d-block w-100 lb-img" alt="Rạch Giá" data-caption="Rạch Giá – Bến cảng biển, ẩm thực hải sản địa phương">
+          <div class="carousel-caption"><h5>Rạch Giá – Bến cảng biển, ẩm thực hải sản địa phương</h5></div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="ảnh/1-1t71.jpg" class="d-block w-100 lb-img" alt="Cà Mau" data-caption="Cà Mau – Mũi đất thiêng liêng cực Nam Tổ quốc">
+          <div class="carousel-caption"><h5>Cà Mau – Mũi đất thiêng liêng cực Nam Tổ quốc</h5></div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="ảnh/dulichbaclieu.webp" class="d-block w-100 lb-img" alt="Bạc Liêu" data-caption="Bạc Liêu – Cánh đồng điện gió xứ công tử nổi tiếng">
+          <div class="carousel-caption"><h5>Bạc Liêu – Cánh đồng điện gió xứ công tử nổi tiếng</h5></div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="ảnh/banhpiasoctrang-1.jpg" class="d-block w-100 lb-img" alt="Sóc Trăng" data-caption="Sóc Trăng – Hương vị ẩm thực Khmer độc đáo">
+          <div class="carousel-caption"><h5>Sóc Trăng – Hương vị ẩm thực Khmer độc đáo</h5></div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev" aria-label="Trước">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next" aria-label="Tiếp">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav-scroll" data-aos="fade-down" aria-label="Navigation">
+    <div class="container-inner d-flex justify-content-center">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-link scroll-link active" href="#tongquan">Tổng quan</a></li>
+        <li class="nav-item"><a class="nav-link scroll-link" href="#lichtrinh">Lịch trình</a></li>
+        <li class="nav-item"><a class="nav-link scroll-link" href="#luuy">Lưu ý</a></li>
+        <li class="nav-item"><a class="nav-link scroll-link" href="#reviews">Đánh giá</a></li>
+        <li class="nav-item"><a class="nav-link scroll-link" href="#map">Bản đồ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ <main>
+    <!-- Tổng quan -->
+    <section id="tongquan" class="tour-section" data-aos="fade-up">
+      <div class="container-inner">
+        <h2 class="section-title">THÔNG TIN THÊM VỀ CHUYẾN ĐI</h2>
+        <div class="info-grid">
+          <div class="info-card" data-aos="fade-up" data-aos-delay="60">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong>Điểm tham quan</strong>
+              <div>Tham quan Cồn Én, Thiên Cấm Sơn, Rạch Giá, Mũi Cà Mau, 2 Khu Vườn Quốc Gia, cánh đồng điện gió Bạc Liêu, trải nghiệm ẩm thực Khmer Sóc Trăng.</div>
+            </div>
+          </div>
+
+          <div class="info-card" data-aos="fade-up" data-aos-delay="120">
+            <i class="bi bi-cup-straw"></i>
+            <div>
+              <strong>Ẩm thực</strong>
+              <div>Mang hương vị đặc trưng của miền Tây, kết hợp vị biển – rừng – đồng quê. Từ hải sản, món chay đến bún nước lèo, lẩu mắm đặc sản được chế biến bằng nguyên liệu tươi mới, đậm chất dân dã, đem đến trải nghiệm khó quên.</div>
+            </div>
+          </div>
+
+          <div class="info-card" data-aos="fade-up" data-aos-delay="180">
+            <i class="bi bi-people"></i>
+            <div>
+              <strong>Đối tượng</strong>
+              <div>Thích hợp cho người yêu thiên nhiên, văn hoá và ẩm thực miền Tây. Phù hợp với nhóm bạn, gia đình nhỏ hoặc sinh viên muốn du lịch trải nghiệm, chụp ảnh và thư giãn nhẹ nhàng.</div>
+            </div>
+          </div>
+
+          <div class="info-card" data-aos="fade-up" data-aos-delay="240">
+            <i class="bi bi-clock"></i>
+            <div>
+              <strong>Thời gian</strong>
+              <div>Tour kéo dài 5 ngày 4 đêm, đẹp nhất từ tháng 11 đến tháng 4 – trời nắng, khô ráo, thuận tiện di chuyển và tham quan. Mùa nước nổi (tháng 9 – 10) cũng hấp dẫn với cảnh sông ngập và hoa điên điển nở vàng.</div>
+            </div>
+          </div>
+
+          <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-bus-front"></i>
+            <div>
+              <strong>Phương tiện</strong>
+              <div>Xe du lịch 16 – 29 chỗ, có máy lạnh và wifi; di chuyển linh hoạt qua các tỉnh, một số chặng dùng xuồng nhỏ. Mỗi xe có 1 – 2 hướng dẫn viên nhiệt tình,vui vẻ, nhiệt huyết, hiểu biết văn hoá và sinh thái.</div>
+            </div>
+          </div>
+
+          <div class="info-card" data-aos="fade-up" data-aos-delay="360">
+            <i class="bi bi-tag"></i>
+            <div>
+              <strong>Khuyến mãi</strong>
+              <div>Đặt tour sớm hoặc theo nhóm được giảm giá nhẹ, kèm quà lưu niệm địa phương. Mùa khô có thêm ưu đãi chụp ảnh miễn phí tại điểm check-in nổi bật.</div>
+            </div>
+          </div>
+    </section>
+    <!-- Lịch trình 5N4Đ -->
+    <section id="lichtrinh" class="tour-section" data-aos="fade-up">
+      <div class="container-inner">
+        <h2 class="section-title">LỊCH TRÌNH 5 NGÀY 4 ĐÊM</h2>
+    <!-- Day 1 -->
+         <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#day1">Ngày 1: Khởi hành – Cồn Én</button></h2>
+            <div id="day1" class="accordion-collapse collapse show" data-bs-parent="#itinAccordion">
+              <div class="accordion-body">
+                <p><strong>Sáng:</strong> Tập trung tại điểm hẹn, khởi hành theo lộ trình. Nghỉ và dùng điểm tâm trên đường.</p>
+                <p><strong>Trưa:</strong>Đến Cồn Én, đi xuồng tham quan sông nước, dùng cơm trưa dân dã với cá nướng trui và canh chua.</p>
+                <p><strong>Chiều:</strong> Tham quan vườn cây ăn trái, giao lưu văn nghệ cùng người dân địa phương.</p>
+                <p><strong>Tối:</strong> Thưởng thức bữa tối đặc sản miền sông nước, tham gia lửa trại, nghỉ đêm homestay tại Cồn Én.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#day2">Ngày 2: Cồn Én – Thiên Cấm Sơn</button></h2>
+            <div id="day2" class="accordion-collapse collapse" data-bs-parent="#itinAccordion">
+              <div class="accordion-body">
+                <p><strong>Sáng:</strong> Dùng bữa sáng tại homestay, tạm biệt người dân Cồn Én, khởi hành đến An Giang.</p>
+                <p><strong>Trưa:</strong> Dừng chân ăn trưa đặc sản Long Xuyên – cơm tấm, lẩu mắm, bánh bò thốt nốt.</p>
+                <p><strong>Chiều:</strong> Đến Thiên Cấm Sơn, tham quan chùa Vạn Linh, chùa Phật Lớn, ngắm toàn cảnh núi non hùng vĩ.</p>
+                <p><strong>Tối:</strong> Ăn tối tại nhà hàng địa phương, thưởng thức gà đồi nướng, nghỉ đêm tại khách sạn dưới chân núi.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#day3">Ngày 3: Thiên Cấm Sơn – Rạch Giá – Cà Mau</button></h2>
+            <div id="day3" class="accordion-collapse collapse" data-bs-parent="#itinAccordion">
+              <div class="accordion-body">
+                <p><strong>Sáng:</strong> Ăn sáng, rời Thiên Cấm Sơn đến Rạch Giá, ghé chợ mua đặc sản, tham quan chùa Tam Bảo và dạo bến tàu Rạch Giá.</p>
+                <p><strong>Trưa:</strong> Ăn trưa tại Rạch Giá với bánh canh ghẹ, mực phá lấu, nghỉ ngơi ngắn thưởng thức cà phê ven biển, ngắm biển Tây.</p>
+<p><strong>Chiều:</strong> Di chuyển tiếp đến Cà Mau, check-in mốc tọa độ GPS cực Nam, đi thuyền xuyên rừng ngập mặn.</p>
+                <p><strong>Tối:</strong> Ăn tối, dạo chợ đêm Cà Mau, mua quà lưu niệm và hải sản khl, nghỉ đêm tại khách sạn.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#day4">Ngày 4: Cà Mau – Bạc Liêu (Điện gió)</button></h2>
+            <div id="day4" class="accordion-collapse collapse" data-bs-parent="#itinAccordion">
+              <div class="accordion-body">
+                <p><strong>Sáng:</strong> Ăn sáng tại Cà Mau, khởi hành đến Bạc Liêu, ghé thăm Nhà Công tử Bạc Liêu trên đường đi.</p>
+                <p><strong>Trưa:</strong> Ăn trưa tại Bạc Liêu với bún bò cay, tham quan chùa Xiêm Cán – ngôi chùa Khmer nổi tiếng.</p>
+                <p><strong>Chiều:</strong> Check-in Cánh đồng điện gió Bạc Liêu, chụp ảnh với các trụ tua-bin khổng lồ, dạo biển Nhà Mát, ngắm hoàng hôn trên biển.</p>
+                <p><strong>Tối:</strong> Ăn tối với bánh xèo đặc sản Bạc Liêu, thưởng thức nhạc tài tử hoặc cà phê ven biển và nghỉ đêm tại khách sạn.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Day 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#day5">Ngày 5: Bạc Liêu – Sóc Trăng – Kết thúc</button></h2>
+            <div id="day5" class="accordion-collapse collapse" data-bs-parent="#itinAccordion">
+              <div class="accordion-body">
+                <p><strong>Sáng:</strong> Ăn sáng tại Bạc Liêu, khởi hành đến Sóc Trăng, ghé chùa Dơi – ngôi chùa nổi tiếng với kiến trúc Khmer.</p>
+                <p><strong>Trưa:</strong> Ăn trưa với đặc sản Khmer như bún nước lèo, bánh pía, nem nướng, tham quan chợ Sóc Trăng, mua đặc sản về làm quà.</p>
+                <p><strong>Chiều:</strong> Dạo quanh các chùa Khmer như chùa Chén Kiểu, chùa Kh’leang, khởi hành về, kết thúc hành trình.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="luuy" class="tour-section" data-aos="fade-up">
+      <div class="container-inner">
+        <h2 class="section-title">NHỮNG THÔNG TIN CẦN LƯU Ý</h2>
+        <div class="accordion" id="notesAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#note1">1. Giá tour bao gồm</button></h2>
+            <div id="note1" class="accordion-collapse collapse show" data-bs-parent="#notesAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li>Xe tham quan (16 - 29 chỗ tùy theo số lượng khách) theo chương trình.</li>
+                  <li>Khách sạn tiêu chuẩn theo chương trình.</li>
+                  <li>Ăn uống theo chương trình tiêu chuẩn từ 100.000 VNĐ - 300.000 VNĐ.</li>
+                  <li>Vé tham quan các điểm theo chương trình</li>
+                  <li>Hướng dẫn viên nhiệt tình, kinh nghiệm suốt tuyến</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#note2">2. Giá tour không bao gồm</button></h2>
+            <div id="note2" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li>Chi phí cá nhân, đồ uống ngoài thực đơn, giặt ủi.</li>
+                  <li>Phụ thu phòng đơn, thuế VAT nếu yêu cầu hóa đơn.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#note3">3. Chính sách trẻ em</button></h2>
+            <div id="note3" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+              <div class="accordion-body">
+                <li>Trẻ em từ 0 – dưới 5 tuổi: không thu phí dịch vụ, gia đình tự lo cho bé. Hai người lớn chỉ được kèm 1 trẻ em dưới 5 tuổi, trẻ em thứ 2 phải đóng phí theo quy định dành cho độ tuổi từ 5 đến dưới 12 tuổi và phụ thu giường đơn</li>
+                <li>Trẻ em từ 5 - dưới 12 tuổi: mua 50% vé dịch vụ, bao gồm phương tiện xe vận chuyển, ăn uống, vé tham quan, ngủ chung với gia đình, không có giường riêng. Hai người lớn chỉ được kèm 1 trẻ em từ 5 - dưới 12 tuổi, em thứ hai trở lên phải mua 1 suất giường đơn</li>
+                <li>Trẻ em từ 12 tuổi trở lên: mua vé như người lớn</li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#note4">4. Điều kiện đăng ký & thanh toán</button></h2>
+            <div id="note4" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+              <div class="accordion-body">
+                <p>Đặt cọc 30% khi đăng ký, phần còn lại thanh toán trước 7–14 ngày. Chấp nhận chuyển khoản, tiền mặt, cổng thanh toán.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#note5">5. Điều kiện huỷ, đổi</button></h2>
+            <div id="note5" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+              <div class="accordion-body">
+                <p>Huỷ trước 15 ngày miễn phí trừ phí cọc; 7–14 ngày chịu 50%; dưới 7 ngày chịu 100%. Dịp lễ/tết có chính sách riêng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#note6">6. Điều kiện huỷ, đổi dịp lễ tết</button></h2>
+            <div id="note6" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+              <div class="accordion-body">
+                <p>Huỷ trước 30 ngày miễn phí trừ phí cọc; 25-29 ngày chịu 50%; dưới 25 ngày chịu 100%.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#note7">7. Trường hợp bất khả kháng</button></h2>
+            <div id="note7" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+              <div class="accordion-body">
+                <p>Nếu chương trình du lịch bị hủy bỏ hoặc thay đổi bởi một trong hai bên vì lý do bất khả kháng (thời tiết, tai nạn, thiên tai, dịch bệnh,…) thì hai bên sẽ không chịu bất kỳ nghĩa vụ bồi hoàn các tổn thất đã xảy ra và không chịu bất kỳ trách nhiệm pháp lý nào. Tuy nhiên mỗi bên có trách nhiệm cố gắng tối đa để giúp đỡ bên bị thiệt hại nhằm giảm thiểu các tổn thất gây ra vì lý do bất khả kháng.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#note8">8. Hành lý & trang phục</button></h2>
+            <div id="note8" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+              <div class="accordion-body">
+                <p>Mang hành lý gọn nhẹ, trang phục phù hợp, giày dép tiện cho hoạt động ngoài trời, nón chống nắng và thuốc men cá nhân.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#note9">9. Yêu cầu đặc biệt</button></h2>
+            <div id="note9" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+              <div class="accordion-body">
+                <p>Yêu cầu đặc biệt (ăn kiêng, phòng riêng, xe riêng...) vui lòng thông báo sớm; có thể phát sinh phụ thu.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#note10">10. Thông tin liên hệ</button></h2>
+            <div id="note10" class="accordion-collapse collapse" data-bs-parent="#notesAccordion">
+              <div class="accordion-body">
+                <p>Địa chỉ: 280 An Dương Vương, Phường Chợ Quán, Quận 5, TP. HCM.<br>Hotline: <a href="tel:+84923089558">(+84) 923 089 558</a><br>Email: <a href="mailto:k51sptina.cnthongtin@gmail.com">k51sptina.cnthongtin@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="tour-section" data-aos="fade-up">
+      <div class="container-inner">
+        <h2 class="section-title">ĐÁNH GIÁ TỪ KHÁCH HÀNG</h2>
+        <div class="row g-3">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="60">
+            <div class="review-card p-3">
+              <div class="d-flex align-items-center mb-2">
+                <div style="width:52px;height:52px;border-radius:50%;background:#f1f5fb;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);margin-right:10px;">TD</div>
+                <div>
+                  <div style="font-weight:800;">Thành Duy</div>
+                  <div style="color:var(--muted);font-size:0.9rem;">24/10/2025</div>
+                </div>
+              </div>
+              <div>Hành trình được tổ chức chuyên nghiệp, hướng dẫn viên nhiệt tình. Điểm đến đẹp, ẩm thực hợp khẩu vị. Sẽ tiếp tục đặt tour tiếp theo với công ty.</div>
+              <div style="margin-top:8px;color:#f1c40f;">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="120">
+            <div class="review-card p-3">
+              <div class="d-flex align-items-center mb-2">
+                <div style="width:52px;height:52px;border-radius:50%;background:#f1f5fb;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);margin-right:10px;">AT</div>
+                <div>
+                  <div style="font-weight:800;">Anh Thi</div>
+                  <div style="color:var(--muted);font-size:0.9rem;">24/10/2025</div>
+                </div>
+              </div>
+              <div>Rất ấn tượng với lịch trình và chất lượng dịch vụ. Xe tốt, khách sạn sạch, đồ ăn ngon. Hướng dẫn viên hiểu biết và quan tâm khách.</div>
+              <div style="margin-top:8px;color:#f1c40f;">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="180">
+            <div class="review-card p-3">
+              <div class="d-flex align-items-center mb-2">
+                <div style="width:52px;height:52px;border-radius:50%;background:#f1f5fb;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);margin-right:10px;">NH</div>
+                <div>
+                  <div style="font-weight:800;">Ngọc Hân</div>
+                  <div style="color:var(--muted);font-size:0.9rem;">24/10/2025</div>
+                </div>
+              </div>
+              <div>Trải nghiệm 5N4Đ tuyệt vời, nhất là phần tham quan điện gió ở Bạc Liêu và ẩm thực Sóc Trăng. Rất đáng giá!</div>
+              <div style="margin-top:8px;color:#f1c40f;">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+   
+
+  </main>
+
+  <div class="price-bar" aria-hidden="false">
+    <div class="price-left">
+      <small style="opacity:.95;">Mã chương trình: <strong>NDSGN574</strong></small>
+      <div class="price">5.290.000 ₫ / Khách</div>
+    </div>
+    <div class="d-flex gap-2 align-items-center">
+      <button class="btn btn-outline-light" title="Gửi yêu cầu" data-bs-toggle="modal" data-bs-target="#modalContact"><i class="bi bi-envelope-fill"></i></button>
+      <button class="btn btn-light text-primary" data-bs-toggle="modal" data-bs-target="#modalBooking"><i class="bi bi-calendar3"></i> Chọn ngày khởi hành</button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalBooking" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="bi bi-calendar3"></i> Chọn ngày khởi hành</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Đóng"></button>
+        </div>
+        <div class="modal-body">
+          <label class="form-label">Ngày khởi hành</label>
+          <input type="date" class="form-control mb-3" id="bookDate">
+          <label class="form-label">Số lượng khách</label>
+          <input type="number" class="form-control mb-3" id="bookQty" min="1" value="1">
+          <label class="form-label">Họ tên liên hệ</label>
+          <input type="text" class="form-control mb-3" id="bookName" placeholder="Họ và tên">
+          <label class="form-label">Số điện thoại</label>
+          <input type="tel" class="form-control mb-3" id="bookPhone" placeholder="+84 ...">
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" id="btnConfirm">Xác nhận đặt tour</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalSuccess" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content text-center p-3">
+        <div class="booking-success">
+          <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+          <div>
+            <h5 style="margin:0 0 6px;">Đặt tour thành công</h5>
+            <div style="color:var(--muted); font-size:0.95rem;">Chúng tôi sẽ liên hệ để xác nhận chi tiết.</div>
+            <div style="margin-top:8px;font-size:0.95rem;">Mã booking của bạn: <strong id="successBookingCode">—</strong></div>
+          </div>
+        </div>
+        <div style="margin-top:12px;">
+          <button class="btn btn-outline-primary btn-sm" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form Modal -->
+  <div class="modal fade" id="modalContact" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"><i class="bi bi-envelope"></i> Gửi nội dung phản hồi</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+        </div>
+        <div class="modal-body">
+          <form id="contactForm" onsubmit="return handleContactSubmit(event)">
+            <div class="mb-3">
+              <label class="form-label">Họ và tên</label>
+              <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Số điện thoại</label>
+              <input type="tel" class="form-control" name="phone">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Nội dung phản hồi</label>
+              <textarea class="form-control" name="message" rows="4" required>Tôi quan tâm đến tour du lịch mã NDSGN574 và muốn biết thêm thông tin chi tiết.</textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary" id="submitBtn">
+                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                <span class="btn-text">Gửi yêu cầu</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+    <img src="" alt="Ảnh lớn" id="lightboxImg">
+    <div class="caption" id="lightboxCaption"></div>
+ 
+
+  
+  </div>
+
+  <footer>
+    <div class="container-inner text-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <h5 style="font-weight:800;">Tra cứu Booking</h5>
+          <div class="input-group mb-3 mt-2">
+            <input id="lookupCode" class="form-control" placeholder="Nhập mã booking của quý khách" aria-label="Mã booking">
+            <button id="lookupBtn" class="btn btn-outline-primary">Tìm kiếm</button>
+          </div>
+          <p style="margin-top:10px;">
+            <strong>280 An Dương Vương, P.Chợ Quán, Quận 5, TP.HCM</strong><br>
+            0923 089 558 &nbsp;|&nbsp; k51sptina.cnthongtin@gmail.com
+          </p>
+
+          <div style="margin-top:10px;">
+            <a class="btn btn-danger rounded-pill" href="tel:0923 089 558"><i class="bi bi-telephone"></i> 0923 089 558</a>
+          </div>
+         
+
+          <p style="margin-top:12px; font-size:0.9rem; color:#444;">Bản quyền © K51.SPTINA. Ghi rõ nguồn khi sử dụng thông tin.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Lên đầu trang"><i class="bi bi-arrow-up" style="font-size:1.12rem;"></i></button>
+ <div class="chat-button" id="chatBtn" title="Trò chuyện ngay"><i class="bi bi-chat-dots-fill" style="font-size:22px;"></i></div>
+   <div class="chat-panel" id="chatPanel" role="dialog" aria-hidden="true">
+    <div class="chat-header">
+      Hỗ trợ trực tuyến
+      <button class="btn btn-sm btn-light" id="chatClose"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div style="font-size:0.95rem;color:#333;">
+        <div style="margin-bottom:8px;"><strong>Chatbot:</strong> Xin chào! Tôi có thể hỗ trợ gì cho quý khách?</div>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <input id="chatInput" class="form-control form-control-sm" placeholder="Nhập tin nhắn..." />
+      <button class="btn btn-primary btn-sm" id="chatSend"><i class="bi bi-send-fill"></i></button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- EmailJS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="email.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
