@@ -414,9 +414,6 @@
       </div>
     </section>
 
-   
-   
-
   </main>
 
   <div class="price-bar" aria-hidden="false">
@@ -492,7 +489,16 @@
             </div>
             <div class="mb-3">
               <label class="form-label">Số điện thoại</label>
-              <input type="tel" class="form-control" name="phone">
+              <input type="tel" class="form-control" name="phone" 
+                     pattern="[0-9]{10}" 
+                     maxlength="10" 
+                     placeholder="Ví dụ: 0912345678"
+                     oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                     title="Vui lòng nhập đúng 10 chữ số"
+                     required>
+              <div class="invalid-feedback">
+                Vui lòng nhập số điện thoại 10 chữ số
+              </div>
             </div>
             <div class="mb-3">
               <label class="form-label">Nội dung phản hồi</label>
