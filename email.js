@@ -32,6 +32,16 @@ async function handleContactSubmit(event) {
     submitBtn.disabled = false;
     return false;
   }
+  // Validate phone number (must be exactly 10 digits)
+  const cleanPhone = from_phone.replace(/\D/g, '');
+  if (from_phone && cleanPhone.length !== 10) {
+    alert('Số điện thoại phải có đúng 10 chữ số.');
+    // Reset button state if validation fails
+    spinner.classList.add('d-none');
+    btnText.textContent = 'Gửi yêu cầu';
+    submitBtn.disabled = false;
+    return false;
+  }
 
   const templateParams = {
     name: from_name,
